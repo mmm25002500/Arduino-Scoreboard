@@ -37,7 +37,7 @@
 - 單芯線 *1
 
 >雙位數七段顯示器腳位  
-![seg7](https://www.icshop.com.tw/pd/3680114001055/3680114001055.png)
+![seg7](https://github.com/CuteUSB/Arduino-Scoreboard/blob/main/img/seg7.png?raw=true)
 
 1. 腳位設置
 ```c++
