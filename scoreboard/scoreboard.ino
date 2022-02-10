@@ -239,10 +239,10 @@ void loop(){
           digitalWrite(seg_R[j],score[x][j]);
         }
 
-        if(victoryscore>2 and i==x and (victoryscore-1==i and x)){ //deuce
+        if(victoryscore>2 and i==x and (victoryscore-1==i and x)){ //Deuce
           victoryscore++;
           digitalWrite(deuceled,1);
-        if(i and x>99){
+          if(i and x>99){
             for(int tie=0;tie<7;tie++){
               for(int seg=0;seg<16;seg++){
                 digitalWrite(seg_L[seg],Tie[tie][seg]);
@@ -252,7 +252,6 @@ void loop(){
             }
             resetFunc();
           }
-        
         }
 
 /*---------------------------seg_L Addpoint----------------------------------*/
