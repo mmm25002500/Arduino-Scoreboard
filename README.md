@@ -52,7 +52,7 @@ const byte seg_R[]={38,40,42,44,46,48,50,52,39,41,43,45,47,49,51,53}; //右側�
 ![segpin]()  
 ![buttonpin]()  
 ![deuceledpin]()  
-![button]()  
+![button](https://raw.githubusercontent.com/CuteUSB/Arduino-Scoreboard/main/img/PXL_20220210_052925610.jpg?token=GHSAT0AAAAAABRPACYIMIQ7SJFO3UI4B3F2YQPW6SQ)  
 ![fritzing]()  
 
 3.寫入程式
