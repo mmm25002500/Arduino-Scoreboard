@@ -8,42 +8,42 @@ Customizable victory point, including Deuce function.
 
 | Picture Example | Explain |
 | ---- | ---- |
-| <img src="img/hola.jpg" width="40%"/> | 開機用[HOLA]表示已準備就緒! |
-| <img src="img/point.jpg" width="40%"/> | 使用右側加分鈕及扣分鈕設定得勝點 **P代表Point呦!** |
-| <img src="img/count.jpg" width="40%"/> | 按下確認鍵開始計分! |
-| <img src="img/10v10.gif" width="40%"/> | 10比10 進入Deuce決鬥!! (Deuce指示燈亮起) |
-| <img src="img/thepoint.jpg" width="40%"/> | 戰到20比21...? 太刺激了 |
-| <img src="img/win.gif" width="40%"/> | 客隊獲勝~ 用閃爍的點來表示贏家 |
+| <img src="img/hola.jpg" width="40%"/> | Use [HOLA] to start up represents the machine is ready! |
+| <img src="img/point.jpg" width="40%"/> | Using right bonus button and deduction button to set vactory point **P represents Point!** |
+| <img src="img/count.jpg" width="40%"/> | Press submit button to start scoring! |
+| <img src="img/10v10.gif" width="40%"/> | 10 to 10. into Deuce duel !! (Deuce light on) |
+| <img src="img/thepoint.jpg" width="40%"/> | 20 to 21...? Exciting!! |
+| <img src="img/win.gif" width="40%"/> | A team wins~ Show winners with flashing dots |
 
 # Make
 
 ### Material
 | Name | Quantity |
 | ---- | ---- |
-| 麵包板 | 1 |
-| 雙位數七段顯示器 | 2 |
-| 杜邦線 | 40 |
+| Breadboard | 1 |
+| Two-digit seven-segment display | 2 |
+| Dupont Line | 40 |
 | Led | 1 |
-| 按鈕 | 5 |
-| 220Ω電阻 | 33 |
-| 4.7KΩ電阻 | 5 |
-| 單芯線 | 1 |
+| Button | 5 |
+| 220Ω resistor | 33 |
+| 4.7KΩ resistor | 5 |
+| single core wire | 1 |
 
 | Picture Example | Explain |
 | ---- | ---- |
-| ![seg7](img/seg7.png) | 雙位數七段顯示器腳位 |
+| ![seg7](img/seg7.png) | Two-digit seven-segment display pinout |
 
 ## Configuration
 
-### 腳位 Setting
+### Foot Position Configuration
 ```c++
-const byte button[]={13,12,11,10,9}; //按鈕順序由左至右
-const byte seg_L[]={22,24,26,28,30,32,34,36,23,25,27,29,31,33,35,37}; //左側顯示器 22~36為十位數 23~37為個位數 [A~DP1]
-const byte seg_R[]={38,40,42,44,46,48,50,52,39,41,43,45,47,49,51,53}; //右側顯示器 38~52為十位數 39~53為個位數 [a~DP2]
-#define deuceled  21 //Deuce狀態指示燈
+const byte button[]={13,12,11,10,9}; //Button order from left to right
+const byte seg_L[]={22,24,26,28,30,32,34,36,23,25,27,29,31,33,35,37}; //Left Side Displayer 22~36 is tens 23~37 is digits [A~DP1]
+const byte seg_R[]={38,40,42,44,46,48,50,52,39,41,43,45,47,49,51,53}; //Right Side Displayer 38~52 is tens 39~53 is digits [a~DP2]
+#define deuceled  21 //Deuce status Indicator
 ```
 
-### Hardware接線
+### Hardware wiring
 
 | Picture Example | Explain |
 | ---- | ---- |
@@ -52,6 +52,6 @@ const byte seg_R[]={38,40,42,44,46,48,50,52,39,41,43,45,47,49,51,53}; //右側�
 | <img src="img/deuceled.jpg" width="40%"/> | Deuceled |
 | <img src="img/button.jpg" width="40%"/> | Button |
 
-**各隊下方按鈕，左側加分，右側扣分。正中間按鈕為確認鍵**  
+**Every Team's below buttons, left side add points, right side minus points. The central button is confirm key**  
 
 <img src="https://github.com/CuteUSB/Arduino-Scoreboard/blob/main/img/fritzing.png?raw=true" alt="Cover" width="40%"/>  
