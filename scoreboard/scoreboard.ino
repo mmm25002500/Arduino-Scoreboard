@@ -1,3 +1,10 @@
+/*
+                      (C) CuteUSB 2022 TershiXia Rewrite.
+            TODO: Add comment per Line which needs to be explained.
+            TODO: Change Line lots of int to dict or array.
+            TODO: Make const boolean array to a new Config file.
+            TODO: Create a Licence such as GPL, MIT, Apache...etc.
+*/
 const byte button[]={13,12,11,10,9};
 const byte seg_L[]={22,24,26,28,30,32,34,36,23,25,27,29,31,33,35,37};
 const byte seg_R[]={38,40,42,44,46,48,50,52,39,41,43,45,47,49,51,53};
@@ -170,8 +177,8 @@ void loop(){
   if(digitalRead(button[3])==0)
   {
     int add=1;
-    while(add<101){
-      for(int j=0;j<16;j++){
+    while(add<=100){
+      for(int j=0;j<=15;j++){
         digitalWrite(seg_R[j],score[add][j]);
         digitalWrite(seg_L[j],winner[12][j]);
       }
@@ -232,9 +239,9 @@ void loop(){
     
     int i=0;
     int x=1;
-    while(i<101){
-      while(x<101){
-        for(int j=0;j<16;j++){
+    while(i<=100){
+      while(x<=100){
+        for(int j=0;j<=15;j++){
           digitalWrite(seg_L[j],score[i][j]);
           digitalWrite(seg_R[j],score[x][j]);
         }
@@ -242,9 +249,9 @@ void loop(){
         if(victoryscore>2 and i==x and (victoryscore-1==i and x)){ //Deuce
           victoryscore++;
           digitalWrite(deuceled,1);
-          if(i and x>99){
-            for(int tie=0;tie<7;tie++){
-              for(int seg=0;seg<16;seg++){
+          if(i and x>=100){ //這是什麼? i?
+            for(int tie=0;tie<=6;tie++){
+              for(int seg=0;seg<=15;seg++){
                 digitalWrite(seg_L[seg],Tie[tie][seg]);
                 digitalWrite(seg_R[seg],Tie[tie][seg]);
               }
