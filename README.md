@@ -1,4 +1,4 @@
-# Arduino-Scoreborad
+# Arduino-記分板
 
 可自定義得勝點，含Deuce功能
 
