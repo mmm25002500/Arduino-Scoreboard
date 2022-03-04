@@ -55,3 +55,7 @@ const byte seg_R[]={38,40,42,44,46,48,50,52,39,41,43,45,47,49,51,53}; //Right Si
 **Every Team's below buttons, left side add points, right side minus points. The central button is confirm key**  
 
 <img src="https://github.com/CuteUSB/Arduino-Scoreboard/blob/main/img/fritzing.png?raw=true" alt="Cover" width="40%"/>  
+
+## Contribute
+**Step 1.** You can fork this project to the local, you have the permission to edit/create/upload the files or any contents, you can edit all information.
+**Step 2.** When you think your local project can contribute the community, you can considerate send PR(Pull Requests) to the main Repository, we will verify it.

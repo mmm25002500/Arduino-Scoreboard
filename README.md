@@ -54,4 +54,8 @@ const byte seg_R[]={38,40,42,44,46,48,50,52,39,41,43,45,47,49,51,53}; //右側�
 
 **各隊下方按鈕，左側加分，右側扣分。正中間按鈕為確認鍵**  
 
-<img src="https://github.com/CuteUSB/Arduino-Scoreboard/blob/main/img/fritzing.png?raw=true" alt="Cover" width="40%"/>  
+<img src="https://github.com/CuteUSB/Arduino-Scoreboard/blob/main/img/fritzing.png?raw=true" alt="Cover" width="40%"/>
+
+## 貢獻
+**Step 1.** 您可以將此專案Fork至本地，您有權對本地專案進行修改/增加/上傳/刪除檔案或任何內容，您可更改所有資訊。
+**Step 2.** 當您認為您的本地專案可以為社群做一份貢獻，您可以考慮提交PR(Pull Requests)至源倉庫，我們會進行審核。
